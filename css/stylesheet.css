@@ -1,4 +1,7 @@
 .brand {
-	--company-name: 'Cheap Health Insurance Markets';
+    --company-name: 'Cheap Health Insurance Markets';
+}
 
+[class*="deep-both"][class*="id1"] {
+    background-image: var(--bg-gradient-8), url('/img/img2.jpg') !important;
 }

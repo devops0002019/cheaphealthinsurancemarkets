@@ -36,10 +36,13 @@
 
     <main id="page">
 
-        <nav id="navbar" class="flex-space-between">
-            <a href="/">
-                <h1 class="brand"></h1>
-            </a>
+        <nav id="navbar">
+            <ul class="nav-menu flex-space-between">
+                <li><a class="text-orange" href="/">
+                        <h1 class="brand"></h1>
+                    </a></li>
+                <li><a href=""><i class="fas fa-seedling 6em text-orange"></i></a></li>
+            </ul>
         </nav>
 
         <section class="section deep-tertiary">
@@ -158,19 +161,32 @@
         </section>
     </main>
 
-    <footer id="footer-empty">
-        <div class="footer">
-            <div class="grid set-cols-1">
+    <footer id="footer">
+            <div class="grid set-cols-1 text-white">
+    
                 <div class="column">
-                    <h3 class="copyright"><span class="brand"></span> <span id="footer-year"></span>. All rights
-                        reserved </h3>
+                    <p class="lead-text text-white"><span class="brand"></span> is a privately owned and operated independent marketing agency
+                        and is not part of or directly correlated with any health insurance company or carrier. We are a
+                        licensed health insurance agency and our agents are qualified to discuss any health care options
+                        available to you in your state. Not all health insurance policies, coverage options or products
+                        may be applicable in your area. Prestige Health Advisors is not affiliated with or sanctioned by
+                        any state exchange, government agency or any other commercial insurance providers.</p>
+                </div>
+    
+                <div class="column">
+                    <h2 class="copyright"> Copyright <span class="brand"></span> <span id="year"></span>. All rights
+                        reserved </h2>
                     <script>
-                        document.getElementById("footer-year").innerHTML = new Date().getFullYear();
+                        document.getElementById("year").innerHTML = new Date().getFullYear();
                     </script>
                 </div>
+    
+                <nav class="nav-menu">
+                    <a href="privacy.html">Privacy</a> |
+                    <a href="terms.html">Term of Use</a>
+                </nav>
             </div>
-        </div>
-    </footer>
+        </footer>
 
 </body>
 
