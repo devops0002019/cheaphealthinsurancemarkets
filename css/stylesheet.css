@@ -1,0 +1,21 @@
+
+.company-name {
+    font-size: 1em !important;
+    --company-name: 'Best Insurance Plan Cost';
+}
+
+.company-name:after {
+    content: var(--company-name) !important;
+} 
+
+
+  .button {
+      -webkit-box-shadow: var(--boxshadow) !important;
+      box-shadow: var(--boxshadow) !important;
+  }
+
+  [class*="column"].homeheadline {
+      --insert-min-height: 100px !important;
+  }
+
+
