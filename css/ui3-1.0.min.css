@@ -50,9 +50,9 @@
 
 	--header-background: #fafafa;
 	--header-text-color: #000;
-	--navbar-background: :#fafafa;
+	--navbar-background: red ;
 	--navbar-text-color: #000;
-	--footer-background: :#fafafa;
+	--footer-background: #fafafa;
 	--footer-text-color: #000;
 
 }
@@ -135,6 +135,8 @@ a.brand>* {
 
 
 
+
+
 [class*="deep-img"],
 [class*="deep-both"] {
 	height: 100%;
@@ -176,10 +178,17 @@ a.brand>* {
 
 
 
+/* utilities */ 
+.text-shadow {
+	text-shadow: 1px 1px #000;
+}
 
 
 
 
+
+
+/* flexboxes */ 
 
 [class*="flex"] {
 	display: flex;
@@ -490,21 +499,13 @@ main classes and subclasses
 
 
 
-/* navs */
-[id*="navbar"] {
-	padding: 1em;
-	text-align: center;
-	width: 98%;
-	margin: auto;
-	max-width: var(--page-max-width);
-}
+/* brans */
 
 .brand {
 	width: auto;
-	color: var(--primary);
 	text-align: center;
 	/* font-size: 1.3em !important; */
-	--company-name: 'Cheap Health Insurance Markets' !important;
+	--company-name: '';
 
 }
 
@@ -2498,4 +2499,48 @@ responsive text code !!!
 		--p-font-size: 1.3rem !important;
 		--span-font-size: 1rem !important;
 	}
+}
+
+
+
+
+
+
+.nav-menu {
+	padding: 1em;
+	text-align: center;
+	width: 98%;
+	margin: auto;
+	max-width: var(--page-max-width);
+}
+
+
+
+
+
+/* themes */
+
+#navbar {
+	background: var(--navbar-background) !important;
+	color:var(--navbar-text-color)!important;
+	width: 100%!important;
+}
+#navbar > * {
+	color:var(--navbar-text-color)!important;
+}
+
+
+
+
+#header {
+	background: var(--header-background)!important;
+	color:var(--header-text-color)!important;
+	width: 100%!important;
+}
+
+
+#footer {
+	background: var(--footer-background);
+	color:var(--footer-text-color);
+	width: 100%;
 }
